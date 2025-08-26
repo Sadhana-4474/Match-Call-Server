@@ -35,19 +35,7 @@ app.get('/generateToken', (req, res) => {
   const privilegeExpireTs = currentTs + expireSeconds;
 
   try {
-    let token;
-
-    if(userAccount){
-      token = RtcTokenBuilder.buildTokenWithAccount(
-       APP_ID,
-        APP_CERTIFICATE,
-        channelName,
-        userAccount,
-        role,
-        privilegeExpireTs 
-      );
-    } else {
-      token = RtcTokenBuilder.buildTokenWithUid(
+      const token = RtcTokenBuilder.buildTokenWithUid(
       APP_ID,
       APP_CERTIFICATE,
       channelName,
@@ -55,7 +43,7 @@ app.get('/generateToken', (req, res) => {
       role,
       privilegeExpireTs
     );
-  }
+  
     return res.json({ token, expiresAt: privilegeExpireTs });
   } catch (err) {
     console.error('Token generation error:', err);
