@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986398127633",
+    "project_id": "callconnectapp",
+    "storage_bucket": "callconnectapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986398127633:android:37c1bb00166bdb725663b0",
+        "android_client_info": {
+          "package_name": "com.example.call"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqb98enEF_7-hfCJwRAmVpD2FvZSjuMUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
